@@ -35,7 +35,7 @@ public class MailUtils {
 		//1创建properties对象
 		Properties prop=new Properties();
 		prop.put("mail.transport.protocol","smtp");//协议
-		prop.put("mail.smtp.host", "smtp.126.com");
+		prop.put("mail.smtp.host", "smtp.qq.com");
 		prop.put("mail.smtp.auth",true);
 		
 		

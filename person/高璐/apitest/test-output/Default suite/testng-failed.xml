@@ -3,12 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.edu.yanjie.LoginTest">
+      <class name="com.edu.core.LoginTest">
         <methods>
+          <include name="loginSuccess"/>
           <include name="doBeforeClass"/>
           <include name="loginFail"/>
         </methods>
-      </class> <!-- com.edu.yanjie.LoginTest -->
+      </class> <!-- com.edu.core.LoginTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
