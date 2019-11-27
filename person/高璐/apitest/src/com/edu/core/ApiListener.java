@@ -101,7 +101,7 @@ public class ApiListener extends TestListenerAdapter{
 		            }
 		       }
 		        try {
-					MailUtils.sendMail1();
+					MailUtils.sendEmail(null, null, null);
 				} catch (IOException e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();

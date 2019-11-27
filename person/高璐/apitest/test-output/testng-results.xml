@@ -2,12 +2,12 @@
 <testng-results skipped="2" failed="0" ignored="0" total="2" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="250" started-at="2019-11-19T01:46:33Z" finished-at="2019-11-19T01:46:33Z">
+  <suite name="Default suite" duration-ms="534" started-at="2019-11-19T02:17:29Z" finished-at="2019-11-19T02:17:29Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="250" started-at="2019-11-19T01:46:33Z" finished-at="2019-11-19T01:46:33Z">
+    <test name="Default test" duration-ms="534" started-at="2019-11-19T02:17:29Z" finished-at="2019-11-19T02:17:29Z">
       <class name="com.edu.core.LoginTest">
-        <test-method status="FAIL" signature="doBeforeClass()[pri:0, instance:com.edu.core.LoginTest@27efef64]" name="doBeforeClass" is-config="true" duration-ms="205" started-at="2019-11-19T01:46:33Z" finished-at="2019-11-19T01:46:33Z">
+        <test-method status="FAIL" signature="doBeforeClass()[pri:0, instance:com.edu.core.LoginTest@27efef64]" name="doBeforeClass" is-config="true" duration-ms="409" started-at="2019-11-19T02:17:29Z" finished-at="2019-11-19T02:17:29Z">
           <exception class="java.lang.IllegalStateException">
             <message>
               <![CDATA[Specified firefox binary location does not exist or is not a real file: D:Program FilesMozilla Firefox\firefox.exe]]>
@@ -58,7 +58,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- doBeforeClass -->
-        <test-method status="SKIP" signature="loginFail()[pri:0, instance:com.edu.core.LoginTest@27efef64]" name="loginFail" duration-ms="0" started-at="2019-11-19T01:46:33Z" finished-at="2019-11-19T01:46:33Z">
+        <test-method status="SKIP" signature="loginFail()[pri:0, instance:com.edu.core.LoginTest@27efef64]" name="loginFail" duration-ms="0" started-at="2019-11-19T02:17:29Z" finished-at="2019-11-19T02:17:29Z">
           <exception class="java.lang.IllegalStateException">
             <message>
               <![CDATA[Specified firefox binary location does not exist or is not a real file: D:Program FilesMozilla Firefox\firefox.exe]]>
@@ -109,7 +109,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginFail -->
-        <test-method status="SKIP" signature="loginSuccess()[pri:0, instance:com.edu.core.LoginTest@27efef64]" name="loginSuccess" duration-ms="0" started-at="2019-11-19T01:46:33Z" finished-at="2019-11-19T01:46:33Z">
+        <test-method status="SKIP" signature="loginSuccess()[pri:0, instance:com.edu.core.LoginTest@27efef64]" name="loginSuccess" duration-ms="0" started-at="2019-11-19T02:17:29Z" finished-at="2019-11-19T02:17:29Z">
           <exception class="java.lang.IllegalStateException">
             <message>
               <![CDATA[Specified firefox binary location does not exist or is not a real file: D:Program FilesMozilla Firefox\firefox.exe]]>
