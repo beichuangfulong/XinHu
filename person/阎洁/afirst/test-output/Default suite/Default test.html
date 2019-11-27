@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Nov 14 16:23:34 CST 2019</td>
+<td>Started on:</td><td>Wed Nov 27 17:01:27 CST 2019</td>
 </tr>
-<tr><td>Total time:</td><td>22 seconds (22118 ms)</td>
+<tr><td>Total time:</td><td>32 seconds (32772 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,13 +75,14 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.edu.yanjie.LoginTest.loginFail()'><b>loginFail</b><br>Test class: com.edu.yanjie.LoginTest</td>
-<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertTrue(Assert.java:44)
-	at org.testng.Assert.assertTrue(Assert.java:54)
-	at com.edu.yanjie.LoginTest.loginFail(LoginTest.java:27)
+<td title='com.edu.yanjie.system.basicmangement.organization.AddJunior.addJunior2()'><b>addJunior2</b><br>Test class: com.edu.yanjie.system.basicmangement.organization.AddJunior<br>Test method: 选中一个组织后新增下级</td>
+<td><div><pre>org.openqa.selenium.NoSuchFrameException: No frame element found by name or id openinputiframe
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;DESKTOP-GPM8FV2&apos;, ip: &apos;169.254.88.63&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_171&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.frame(RemoteWebDriver.java:885)
+	at com.edu.yanjie.core.WebDriverEngine.enterFrame(WebDriverEngine.java:64)
+	at com.edu.yanjie.system.basicmangement.organization.AddJunior.addJunior2(AddJunior.java:33)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -107,13 +108,14 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1528834618", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1528834618'><pre>java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertTrue(Assert.java:44)
-	at org.testng.Assert.assertTrue(Assert.java:54)
-	at com.edu.yanjie.LoginTest.loginFail(LoginTest.java:27)
+</pre></div><a href='#' onClick='toggleBox("stack-trace768776793", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace768776793'><pre>org.openqa.selenium.NoSuchFrameException: No frame element found by name or id openinputiframe
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;DESKTOP-GPM8FV2&apos;, ip: &apos;169.254.88.63&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_171&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.frame(RemoteWebDriver.java:885)
+	at com.edu.yanjie.core.WebDriverEngine.enterFrame(WebDriverEngine.java:64)
+	at com.edu.yanjie.system.basicmangement.organization.AddJunior.addJunior2(AddJunior.java:33)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -140,21 +142,8 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>7</td>
-<td>com.edu.yanjie.LoginTest@27efef64</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='com.edu.yanjie.LoginTest.loginSuccess()'><b>loginSuccess</b><br>Test class: com.edu.yanjie.LoginTest</td>
-<td></td>
-<td>7</td>
-<td>com.edu.yanjie.LoginTest@27efef64</td></tr>
+<td>16</td>
+<td>com.edu.yanjie.system.basicmangement.organization.AddJunior@6f7fd0e6</td></tr>
 </table><p>
 </body>
 </html>

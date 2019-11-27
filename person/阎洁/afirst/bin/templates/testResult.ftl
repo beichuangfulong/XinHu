@@ -8,29 +8,49 @@
   <p>共运行了${casesize}条测试用例</p>
   <p>失败了${failedList}条测试用例,成功了${passedList}条测试用例</p>
 
+ <#if failed?size gt 0>
 <p>执行失败的测试用例</p>
 <table border='1'>
  <tr bgcolor='orange'>
- <td>名字</td><td>method</td><td>状态</td>
+ <td>序号</td>
+ <td>名字</td>
+ <td>method</td>
+ <td>casetitle</td>
+ <td>测试结论</td>
  </tr>
-<#list failed as being>
+<#list failed as case>
     <tr bgcolor='red'>
-        <td>${being.name}</td><td>${being.method}</td><td>${being.status}</td>
+        <td>${case_index+1}</td>
+        <td>${case.name}</td>
+        <td>${case.method}</td>
+        <td>${case.getAttribute("name")}</td>
+        <td>FAIL</td>
     </tr>
 </#list>
 </table>
+ </#if>
 
+ <#if pass?size gt 0>
 <p>执行成功的测试用例</p>
 <table border='1'>
  <tr bgcolor='orange'>
- <td>名字</td><td>method</td><td>状态</td>
+ <td>序号</td>
+ <td>名字</td>
+ <td>method</td>
+ <td>casetitle</td>
+ <td>测试结论</td>
  </tr>
-<#list pass as being>
+<#list pass as case>
     <tr bgcolor='green'>
-        <td>${being.name}</td><td>${being.method}</td><td>${being.status}</td>
+        <td>${case_index+1}</td>
+        <td>${case.name}</td>
+        <td>${case.method}</td>
+        <td>${case.getAttribute("name")}</td>
+        <td>PASS</td>
     </tr>
 </#list>
 </table>
+ </#if>
   
 </body>
 </html>

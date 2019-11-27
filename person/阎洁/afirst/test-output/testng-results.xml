@@ -1,28 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="2" passed="1">
+<testng-results skipped="0" failed="1" ignored="1" total="2" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="22118" started-at="2019-11-14T08:23:34Z" finished-at="2019-11-14T08:23:56Z">
+  <suite name="Default suite" duration-ms="32772" started-at="2019-11-27T09:01:27Z" finished-at="2019-11-27T09:02:00Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="22118" started-at="2019-11-14T08:23:34Z" finished-at="2019-11-14T08:23:56Z">
-      <class name="com.edu.yanjie.LoginTest">
-        <test-method status="PASS" signature="doBeforeClass()[pri:0, instance:com.edu.yanjie.LoginTest@27efef64]" name="doBeforeClass" is-config="true" duration-ms="7897" started-at="2019-11-14T08:23:34Z" finished-at="2019-11-14T08:23:42Z">
+    <test name="Default test" duration-ms="32772" started-at="2019-11-27T09:01:27Z" finished-at="2019-11-27T09:02:00Z">
+      <class name="com.edu.yanjie.system.basicmangement.organization.AddJunior">
+        <test-method status="PASS" signature="doBeforeClass()[pri:0, instance:com.edu.yanjie.system.basicmangement.organization.AddJunior@6f7fd0e6]" name="doBeforeClass" is-config="true" duration-ms="16476" started-at="2019-11-27T09:01:27Z" finished-at="2019-11-27T09:01:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- doBeforeClass -->
-        <test-method status="FAIL" signature="loginFail()[pri:0, instance:com.edu.yanjie.LoginTest@27efef64]" name="loginFail" duration-ms="7017" started-at="2019-11-14T08:23:42Z" finished-at="2019-11-14T08:23:49Z">
-          <exception class="java.lang.AssertionError">
+        <test-method status="FAIL" signature="addJunior2()[pri:0, instance:com.edu.yanjie.system.basicmangement.organization.AddJunior@6f7fd0e6]" name="addJunior2" duration-ms="16225" started-at="2019-11-27T09:01:43Z" description="选中一个组织后新增下级" finished-at="2019-11-27T09:02:00Z">
+          <exception class="org.openqa.selenium.NoSuchFrameException">
             <message>
-              <![CDATA[expected [true] but found [false]]]>
+              <![CDATA[No frame element found by name or id openinputiframe
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'DESKTOP-GPM8FV2', ip: '169.254.88.63', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
+Driver info: driver.version: unknown]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:96)
-at org.testng.Assert.failNotEquals(Assert.java:776)
-at org.testng.Assert.assertTrue(Assert.java:44)
-at org.testng.Assert.assertTrue(Assert.java:54)
-at com.edu.yanjie.LoginTest.loginFail(LoginTest.java:27)
+              <![CDATA[org.openqa.selenium.NoSuchFrameException: No frame element found by name or id openinputiframe
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'DESKTOP-GPM8FV2', ip: '169.254.88.63', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
+Driver info: driver.version: unknown
+at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.frame(RemoteWebDriver.java:885)
+at com.edu.yanjie.core.WebDriverEngine.enterFrame(WebDriverEngine.java:64)
+at com.edu.yanjie.system.basicmangement.organization.AddJunior.addJunior2(AddJunior.java:33)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -50,15 +54,11 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.openqa.selenium.NoSuchFrameException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginFail -->
-        <test-method status="PASS" signature="loginSuccess()[pri:0, instance:com.edu.yanjie.LoginTest@27efef64]" name="loginSuccess" duration-ms="7109" started-at="2019-11-14T08:23:49Z" finished-at="2019-11-14T08:23:56Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginSuccess -->
-      </class> <!-- com.edu.yanjie.LoginTest -->
+        </test-method> <!-- addJunior2 -->
+      </class> <!-- com.edu.yanjie.system.basicmangement.organization.AddJunior -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
