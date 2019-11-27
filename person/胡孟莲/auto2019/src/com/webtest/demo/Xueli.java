@@ -1,9 +1,13 @@
 package com.webtest.demo;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.interactions.Action;
+//Œ“µƒ’ ∫≈ «h15733432671@dingtalk.com √‹¬Îzhangzhen010401HML
 import org.openqa.selenium.interactions.Actions;
+import org.testng.annotations.Test;
 
 public class Xueli {
 
@@ -15,14 +19,15 @@ public class Xueli {
 		System.setProperty("webdriver.firefox.bin", "D:\\Program Files\\Mozilla Firefox\\firefox.exe");
 
 		WebDriver wd = new FirefoxDriver();
-		wd.get("http://www.roqisoft.com/zhsx/");
+		wd.get("http://10.7.10.7/");
 		wd.findElement(By.linkText("µ«¬º")).click();
 		Thread.sleep(3000);
-		wd.findElement(By.name("username")).sendKeys("2724702423@qq.com");
-		wd.findElement(By.name("password")).sendKeys("admin");
+		wd.findElement(By.name("username")).sendKeys("h15733432671@dingtalk.com");
+		wd.findElement(By.name("password")).sendKeys("zhangzhen010401HML");
 		wd.findElement(By.id("submit")).click();
 		Thread.sleep(3000);
-		Actions action = new Actions(wd);
+//		wd.findElement(By.className("notification-box")).click();
+		Actions action =	 new Actions(wd);
 		action.moveToElement(wd.findElement(By.className("notification-box"))).perform();
 
 		Thread.sleep(3000);
@@ -32,6 +37,9 @@ public class Xueli {
 		System.out.println(flag);
 		System.out.println(wd.findElement(By.className("notification-box")).getTagName());
 	}
+	
+//	JavascriptExecutor j = (JavascriptExecutor) wd;
+//	j.executeScript("arguments[0].click();",wd.findElement(By.className("notification-box")));
 	
 
 }
