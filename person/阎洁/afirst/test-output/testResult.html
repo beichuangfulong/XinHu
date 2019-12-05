@@ -4,9 +4,9 @@
 </head>
 <body>
   <h1>测试报告</h1>
-  <p>生成测试报告的时间：2019-11-19  04:20:18</p>
-  <p>共运行了4条测试用例</p>
-  <p>失败了2条测试用例,成功了2条测试用例</p>
+  <p>生成测试报告的时间：2019-12-05  09:15:06</p>
+  <p>共运行了7条测试用例</p>
+  <p>失败了3条测试用例,成功了4条测试用例</p>
 
 <p>执行失败的测试用例</p>
 <table border='1'>
@@ -19,16 +19,23 @@
  </tr>
     <tr bgcolor='red'>
         <td>1</td>
-        <td>test2</td>
-        <td>TestDmeo.test2()[pri:0, instance:com.edu.yanjie.demo.TestDmeo@2b98378d]</td>
-        <td>用例2</td>
+        <td>AddCompany4</td>
+        <td>AddCompany.AddCompany4()[pri:0, instance:com.edu.yanjie.system.basicmangement.company.AddCompany@27efef64]</td>
+        <td>添加名称<script>alert('xss攻击攻击')</script>的公司</td>
         <td>FAIL</td>
     </tr>
     <tr bgcolor='red'>
         <td>2</td>
-        <td>test4</td>
-        <td>TestDmeo.test4()[pri:0, instance:com.edu.yanjie.demo.TestDmeo@2b98378d]</td>
-        <td>用例4</td>
+        <td>AddCompany6</td>
+        <td>AddCompany.AddCompany6()[pri:0, instance:com.edu.yanjie.system.basicmangement.company.AddCompany@27efef64]</td>
+        <td>添加名称个数为200个的公司</td>
+        <td>FAIL</td>
+    </tr>
+    <tr bgcolor='red'>
+        <td>3</td>
+        <td>AddCompany7</td>
+        <td>AddCompany.AddCompany7()[pri:0, instance:com.edu.yanjie.system.basicmangement.company.AddCompany@27efef64]</td>
+        <td>添加名称含有特殊字符（enter 空格和@·？）的公司</td>
         <td>FAIL</td>
     </tr>
 </table>
@@ -44,16 +51,30 @@
  </tr>
     <tr bgcolor='green'>
         <td>1</td>
-        <td>test1</td>
-        <td>TestDmeo.test1()[pri:0, instance:com.edu.yanjie.demo.TestDmeo@2b98378d]</td>
-        <td>用例1</td>
+        <td>AddCompany1</td>
+        <td>AddCompany.AddCompany1()[pri:0, instance:com.edu.yanjie.system.basicmangement.company.AddCompany@27efef64]</td>
+        <td>添加名称呵呵哒的公司</td>
         <td>PASS</td>
     </tr>
     <tr bgcolor='green'>
         <td>2</td>
-        <td>test3</td>
-        <td>TestDmeo.test3()[pri:0, instance:com.edu.yanjie.demo.TestDmeo@2b98378d]</td>
-        <td>用例3</td>
+        <td>AddCompany2</td>
+        <td>AddCompany.AddCompany2()[pri:0, instance:com.edu.yanjie.system.basicmangement.company.AddCompany@27efef64]</td>
+        <td>不添加名称</td>
+        <td>PASS</td>
+    </tr>
+    <tr bgcolor='green'>
+        <td>3</td>
+        <td>AddCompany3</td>
+        <td>AddCompany.AddCompany3()[pri:0, instance:com.edu.yanjie.system.basicmangement.company.AddCompany@27efef64]</td>
+        <td>添加已存在的名称为呵呵哒的公司</td>
+        <td>PASS</td>
+    </tr>
+    <tr bgcolor='green'>
+        <td>4</td>
+        <td>AddCompany5</td>
+        <td>AddCompany.AddCompany5()[pri:0, instance:com.edu.yanjie.system.basicmangement.company.AddCompany@27efef64]</td>
+        <td>添加名称个数为100个的公司</td>
         <td>PASS</td>
     </tr>
 </table>

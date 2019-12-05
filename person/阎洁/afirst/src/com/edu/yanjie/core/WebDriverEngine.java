@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
+import org.apache.xmlbeans.impl.xb.xsdschema.impl.PublicImpl;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -14,6 +15,7 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebDriver.Navigation;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -35,7 +37,6 @@ public class WebDriverEngine {
 	ElementFinder finder = null;
 	Actions action  =null;
 
-	
 	public String[] getAllWindowTitles() {
 		// TODO Auto-generated method stub
 	    String current = driver.getWindowHandle();
@@ -58,7 +59,7 @@ public class WebDriverEngine {
 		finder = new ElementFinder(driver);
 		action = new Actions(driver);
 	}
-
+	
 	public void enterFrame(String frameID) {
 		this.pause(3000);
 		driver.switchTo().frame(frameID);
@@ -151,7 +152,6 @@ public class WebDriverEngine {
 	}
 	
 	public WebElement FindElement(String locator) {
-
 		WebElement element = finder.findElement(locator);
 		return element;
 		
@@ -173,12 +173,15 @@ public class WebDriverEngine {
 		action.doubleClick(element).build().perform();
 	}
 
-	public void isDisplayed(String locator) {
+	public Boolean isDisplayed(String locator) {
 
 		WebElement element = finder.findElement(locator);
 		if (element != null) {
-			System.out.println(element.isDisplayed());
+//			System.out.println(element.isDisplayed());
+			return true;
 		}
+		else
+			return false;
 	}
 	//ÅÐ¶ÏÔªËØÊÇ·ñ»Ò»¯×´Ì¬
 	public Boolean isEnabled(String locator) {
@@ -272,6 +275,12 @@ public class WebDriverEngine {
 		JavascriptExecutor j = (JavascriptExecutor) driver;
 		j.executeScript(js);
 	}
+	public void ElementDisplay(WebElement element) {
+		JavascriptExecutor j = (JavascriptExecutor) driver;
+	    j.executeScript("arguments[0].setAttribute('style',arguments[1]);",element,"display:block;");
+		
+	}
+	
 
 
 	public void mouseoverElement(String locator) throws InterruptedException {

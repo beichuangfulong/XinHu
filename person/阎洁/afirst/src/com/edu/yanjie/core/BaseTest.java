@@ -13,6 +13,7 @@ import java.util.Properties;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebDriver.Navigation;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterSuite;
@@ -78,17 +79,17 @@ public class BaseTest {
 		driver = this.newWebDriver(driverType);
 		driver.manage().window().maximize();
 		Log.info(driverType);
-		webtest = new WebDriverEngine(driver);
-		//登录
+		webtest = new WebDriverEngine(driver);	
+		 //打开网页
 		webtest.open("http://localhost:8888/xinhu_utf8_v1.5.9");
 		//登录
 		webtest.type("name=adminuser", "admin");
 		webtest.type("xpath=//input[@type='password']", "123456");
 		webtest.click("name=button");
-		//进入系统模块
-		webtest.click("xpath=//span[@pmenuid='1']");
-		
-	
+	}
+	public void refreshPage() throws InterruptedException {
+		driver.navigate().refresh();
+		Thread.sleep(3000);
 	}
 
 
@@ -100,6 +101,7 @@ public class BaseTest {
 //		Log.info("Quitted Browser");
 //	}
 //	
+
 
 	
 
