@@ -24,7 +24,7 @@ public class NSDataProvider {
 
 	@DataProvider(name="excel")
 	public Object[][] getExcelDada() throws IOException{
-		return new ExcelDataProvider().getTestDataByExcel("data/user.xlsx","Sheet1");
+		return new ExcelDataProvider().getTestDataByExcel("F:\\data\\user.xlsx","Sheet1");
 	}
 	
 	@DataProvider(name="mysql")

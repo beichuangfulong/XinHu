@@ -141,6 +141,8 @@ public class WebDriverEngine {
 			this.pause(3000);
 		}
 	}
+	
+	
 
 	public void clickLonger(String locator) {
 
@@ -248,6 +250,11 @@ public class WebDriverEngine {
 	public void runJs(String js) {
 		JavascriptExecutor j = (JavascriptExecutor) driver;
 		j.executeScript(js);
+	}
+
+	public void runJs(String js,String locator) {
+		JavascriptExecutor j = (JavascriptExecutor) driver;
+		j.executeScript(js,finder.findElement(locator));
 	}
 
 

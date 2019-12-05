@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="log">
+	<test name="test1">
+		<classes>
+			<class name="com.webtest.xinhu.Log">
+				<methods>
+					<include name="login"/>
+					<include name="changeColor"/>
+					<include name="logout"/>
+				</methods>
+			</class>
+		
+		</classes>
+	</test>
+</suite>

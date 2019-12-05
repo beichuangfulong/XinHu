@@ -20,6 +20,7 @@ public class Front_Login1 extends BaseTest{
 		}
 		webtest.click("link=µÇÂ¼");
 		webtest.type("name=username",u_name );
+		
 		webtest.type("name=password", u_pwd);
 		webtest.click("xpath=//input[@value='ÂíÉÏµÇÂ¼']");
 		assertTrue(webtest.isTextPresent("ÍË³ö"));
