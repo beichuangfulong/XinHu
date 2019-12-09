@@ -7,7 +7,6 @@ import org.openqa.selenium.WebElement;
 
 import com.webtest.utils.Log;
 /**
- * author:lihuanzhen
  * ≤È’“‘™Àÿ¿‡
  */
 public class ElementFinder {
@@ -59,7 +58,7 @@ public class ElementFinder {
 			System.out.println(locator);
 			return driver.findElement(By.partialLinkText(locator));
 		}
-		
+	
 		
 		
 		

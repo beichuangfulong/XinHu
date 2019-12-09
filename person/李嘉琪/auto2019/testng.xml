@@ -1,0 +1,16 @@
+<suite name ="TestNGSuite">
+	<test name="test1">
+		<classes>
+		
+			<class name="com.webtest.xinhu.reim.ReimSearch"/>
+			<class name="com.webtest.xinhu.reim.ReimChat"/>
+			<class name="com.webtest.xinhu.reim.ReimSet"/>
+			<class name="com.webtest.xinhu.reim.Process"/>
+			<class name="com.webtest.xinhu.reim.ProcessData"/>
+			
+		</classes>
+		<listeners>
+			<listener class-name="com.webtest.core.ApiListener"/>
+		</listeners>
+	</test>
+</suite>

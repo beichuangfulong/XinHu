@@ -11,6 +11,10 @@ import org.testng.ITestNGMethod;
 import org.testng.ITestResult;
 import org.testng.TestListenerAdapter;
 
+/**
+ * freemarker≈‰÷√
+ */
+
 public class FreeMarkerDemo extends TestListenerAdapter{
 
 	@SuppressWarnings({ "rawtypes", "unused", "unchecked" })

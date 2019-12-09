@@ -21,6 +21,10 @@ import com.webtest.utils.ReadProperties;
 import freemarker.template.Configuration;
 import freemarker.template.Template;
 
+/**
+ * º‡Ã˝∆˜
+ */
+
 public class ApiListener extends TestListenerAdapter{
 
 
@@ -101,12 +105,11 @@ public class ApiListener extends TestListenerAdapter{
 		            }
 		       }
 		        try {
-					MailUtil.sendEmail("≤‚ ‘±®∏Ê",resultend, 2);
+					MailUtil.sendEmail("≤‚ ‘±®∏Ê",resultend,2);
 				} catch (IOException e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
-		
 	}
 
 	   public String getTime()
@@ -115,7 +118,6 @@ public class ApiListener extends TestListenerAdapter{
 	        java.text.SimpleDateFormat f=new java.text.SimpleDateFormat("yyyy-MM-dd  hh:mm:ss");    
 	       	return  f.format(c.getTime());    
 	    }
-
 
 }
 

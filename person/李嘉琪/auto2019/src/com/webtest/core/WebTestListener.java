@@ -9,7 +9,6 @@ import org.testng.TestListenerAdapter;
 import com.webtest.utils.Log;
 
 /**
- * author:lihuanzhen
  * ¼àÌıÆ÷£¬ÓÃÀıÊ§°Ü£¬½ØÆÁ
  */
 

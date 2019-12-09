@@ -15,6 +15,7 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
@@ -24,19 +25,18 @@ import com.webtest.utils.Log;
 import com.webtest.utils.ReadProperties;
 
 /**
- * author:lihuanzhen
  * ³õÊ¼»¯ä¯ÀÀÆ÷
  */
 
 
 public class BaseTest {
-
+	String baseurl="http://localhost/xinhu";
 	public  WebDriverEngine webtest;
 	private WebDriver driver;
 	public String driverType;
 
 	
-	
+
 
 	private WebDriver newWebDriver(String driverType) throws IOException {
 		WebDriver driver = null;
@@ -74,27 +74,25 @@ public class BaseTest {
 
 	@BeforeClass
 	public void doBeforeClass() throws Exception {
-
+		
 		driverType=ReadProperties.getPropertyValue("driverType");
 		driver = this.newWebDriver(driverType);
 		driver.manage().window().maximize();
 		Log.info(driverType);
 		webtest = new WebDriverEngine(driver);
-	
+		webtest.open(baseurl);
+		//µÇÂ¼
+		webtest.type("name=adminuser", "admin");
+		webtest.type("xpath=//input[@type='password']", "123456");
+		webtest.click("name=button");
 	
 	
 	}
-
-
-//	@AfterSuite
-//	public void doAfterMethod() {
-//		if(this.driver != null){
-//			this.driver.quit();
-//			}
-//		Log.info("Quitted Browser");
-//	}
-//	
-
+	@AfterClass
+	public void doAfterClass() throws Exception{
+		Thread.sleep(3000);
+		driver.quit();
+	}
 	
 
 	

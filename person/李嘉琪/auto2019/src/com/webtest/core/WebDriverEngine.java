@@ -22,12 +22,12 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import org.xml.sax.Locator;
 
 import com.webtest.utils.Log;
 import com.webtest.utils.ReadProperties;
 /**
- * author:lihuanzhen
- 
+ *浏览器操作
  */
 public class WebDriverEngine {
 
@@ -58,7 +58,11 @@ public class WebDriverEngine {
 		finder = new ElementFinder(driver);
 		action = new Actions(driver);
 	}
-
+	public void max() {
+		driver.manage().window().maximize();
+		finder = new ElementFinder(driver);
+		action = new Actions(driver);
+	}
 	public void enterFrame(String frameID) {
 		this.pause(3000);
 		driver.switchTo().frame(frameID);
@@ -101,7 +105,7 @@ public class WebDriverEngine {
 			e.printStackTrace();
 		}
 	}
-
+	
 	public boolean isTextPresent(String pattern) {
 
 		String text = driver.getPageSource();
@@ -117,7 +121,7 @@ public class WebDriverEngine {
 		if (element != null) {
 			element.clear();
 			element.sendKeys(value);
-
+			this.pause(2000);
 		}
 	}
 
@@ -125,9 +129,10 @@ public class WebDriverEngine {
 		WebElement element = finder.findElement(locator);
 		if (element != null) {
 			element.sendKeys(value);
+			this.pause(2000);
 		}
 	}
-
+	
 	public boolean isChecked(String locator) {
 		WebElement element = finder.findElement(locator);
 		return element.isSelected();
@@ -141,7 +146,7 @@ public class WebDriverEngine {
 			this.pause(3000);
 		}
 	}
-
+	
 	public void clickLonger(String locator) {
 
 		WebElement element = finder.findElement(locator);
@@ -267,7 +272,7 @@ public class WebDriverEngine {
 	public void rightClickMouse(String locator) throws InterruptedException {
 		action.contextClick(finder.findElement(locator)).perform();
 		}
-	//Tab�?
+	//Tab�?
 	public void tapClick(){
 	
 		action.sendKeys(Keys.TAB).perform();;

@@ -20,6 +20,9 @@ import javax.mail.internet.MimeMessage;
 
 import com.webtest.utils.ReadProperties;
 
+/**
+ * 发送邮件
+ */
 
 public class MailUtil {
 	//文件不是file输入1，是file输入其他int型数字

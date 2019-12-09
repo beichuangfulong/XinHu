@@ -11,7 +11,6 @@ import org.openqa.selenium.WebDriver;
 
 import com.google.common.io.Files;
 /**
- * author:lihaunzhen
  * Ωÿ∆¡¿‡
  */
 public class SeleniumScreenShot {

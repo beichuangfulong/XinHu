@@ -7,7 +7,6 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
@@ -22,8 +21,8 @@ import org.testng.annotations.Test;
 public class ExcelDataProvider {
 
 
-
-	public Object[][] getTestDataByExcel(String fileName, String sheetName)
+	
+	public  Object[][] getTestDataByExcel(String fileName, String sheetName)
 			throws IOException {
 		File file = new File(fileName);
 		FileInputStream inputstream = new FileInputStream(file);

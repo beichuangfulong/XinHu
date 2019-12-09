@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [TestNGSuite]">
+  <listeners>
+    <listener class-name="com.webtest.core.ApiListener"/>
+  </listeners>
+  <test thread-count="5" name="test1(failed)">
+    <classes>
+      <class name="com.webtest.xinhu.reim.ReimSearch">
+        <methods>
+          <include name="searchDemo3"/>
+          <include name="searchDemo4"/>
+          <include name="doAfterClass"/>
+          <include name="doBeforeClass"/>
+        </methods>
+      </class> <!-- com.webtest.xinhu.reim.ReimSearch -->
+      <class name="com.webtest.xinhu.reim.ReimChat">
+        <methods>
+          <include name="chatDemo1"/>
+          <include name="chatDemo2"/>
+          <include name="chatDemo3"/>
+          <include name="chatDemo4"/>
+          <include name="doAfterClass"/>
+          <include name="doBeforeClass"/>
+        </methods>
+      </class> <!-- com.webtest.xinhu.reim.ReimChat -->
+      <class name="com.webtest.xinhu.reim.ReimSet">
+        <methods>
+          <include name="doAfterClass"/>
+          <include name="doBeforeClass"/>
+          <include name="setDemo3"/>
+        </methods>
+      </class> <!-- com.webtest.xinhu.reim.ReimSet -->
+    </classes>
+  </test> <!-- test1(failed) -->
+</suite> <!-- Failed suite [TestNGSuite] -->
