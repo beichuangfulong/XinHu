@@ -4,7 +4,7 @@ import static org.testng.Assert.assertFalse;
 
 import org.testng.annotations.Test;
 
-import com.edu.yanjie.core.BaseTest;
+import com.edu.core.BaseTest;
 
 public class DeleteConversation extends BaseTest {
 	public void initDemo() {

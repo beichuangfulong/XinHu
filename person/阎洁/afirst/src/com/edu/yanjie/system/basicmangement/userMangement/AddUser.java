@@ -4,9 +4,8 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.Test;
 
-import com.edu.yanjie.core.BaseTest;
-
-import dataprovider.NSDataProvider;
+import com.edu.core.BaseTest;
+import com.edu.dataprovider.NSDataProvider;
 
 public class AddUser extends BaseTest {
 	public void InitDemo() {

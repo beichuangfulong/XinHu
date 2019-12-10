@@ -3,12 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.edu.yanjie.system.IM.conversationManagement.AddConversation">
+      <class name="com.edu.yanjie.system.TestDemo1">
         <methods>
-          <include name="addConversation3"/>
-          <include name="doBeforeClass"/>
+          <include name="test2"/>
         </methods>
-      </class> <!-- com.edu.yanjie.system.IM.conversationManagement.AddConversation -->
+      </class> <!-- com.edu.yanjie.system.TestDemo1 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
