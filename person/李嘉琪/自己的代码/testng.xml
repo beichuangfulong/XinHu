@@ -8,6 +8,7 @@
 			<class name="com.webtest.xinhu.reim.Process"/>
 			<class name="com.webtest.xinhu.reim.ProcessData"/>
 			<class name="com.webtest.xinhu.reim.ProcessList"/>
+			<class name="com.webtest.xinhu.reim.ProcessTerm"/>
 			
 		</classes>
 		<listeners>
