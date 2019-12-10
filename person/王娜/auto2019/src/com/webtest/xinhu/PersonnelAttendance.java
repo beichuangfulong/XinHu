@@ -7,7 +7,7 @@ import com.webtest.core.BaseTest;
 import com.webtest.dataprovider.NSDataProvider;
 
 public class PersonnelAttendance extends BaseTest {
-	//人事考勤模块
+	//人事考勤模块-人事档案
 	
 	@Test(dataProvider="excel",dataProviderClass=NSDataProvider.class)
 	//登录，进入人事考勤模块
@@ -18,6 +18,15 @@ public class PersonnelAttendance extends BaseTest {
 		webtest.type("xpath=//input[@type='password']", pwd);
 		webtest.click("class=webbtn");
 		webtest.click("xpath=//span[@pmenuid=27]");
+	}
+	
+	@Test
+//	查看开发部员工档案
+	public void test3() {
+//		webtest.click("xpath=//*[@id=\"menu_list_num84\"]");
+		webtest.click("xpath=//*[@id=\"menu_list_num85\"]");
+		webtest.type("xpath=//*[@id=\"content_num85\"]/div[1]/table/tbody/tr/td[2]/input", "开发部");
+		webtest.click("xpath=//*[@id=\"content_num85\"]/div[1]/table/tbody/tr/td[4]/div/button[1]");
 	}
 	
 	@Test
@@ -58,15 +67,12 @@ public class PersonnelAttendance extends BaseTest {
 	}
 	
 	@Test
-	//考试培训
-	public void test3() {
-		webtest.click("xpath=//*[@id=\"menu_list_num199\"]");
-		webtest.click("xpath=//*[@id=\"menu_list_num201\"]");
-//		webtest.type("xpath=//input[starts-with(@id,'key')]", "管理层");
-		webtest.type("xpath=//*[@id=\"content_num201\"]/div[1]/table/tbody/tr/td[1]/input", "管理层");
-		webtest.click("xpath=//*[@id=\"content_num201\"]/div[1]/table/tbody/tr/td[2]/button");
+//	按照职位进行人员分析
+	public void test4() {
+		webtest.click("xpath=//*[@id=\"menu_list_num149\"]");
+		webtest.selectByValue("xpath=//select[starts-with(@id,'type')]", "ranking");
+		webtest.click("xpath=//*[@id=\"content_num149\"]/div[1]/table/tbody/tr/td[4]/button");
+		webtest.click("xpath=//*[@id=\"menu_list_num84\"]");
 	}
-	//*[@id="content_num201"]/div[1]/table/tbody/tr/td[1]
 	
-
 }

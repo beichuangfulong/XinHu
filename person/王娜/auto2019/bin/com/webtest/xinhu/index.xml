@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="index">
+	<test name="test1">
+		<classes>
+			<class name="com.webtest.xinhu.Log"/>
+			<class name="com.webtest.xinhu.ChangeColor"/>
+		</classes>
+	</test>
+</suite>
