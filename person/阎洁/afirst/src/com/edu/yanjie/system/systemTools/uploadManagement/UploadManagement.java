@@ -4,7 +4,7 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.Test;
 
-import com.edu.yanjie.core.BaseTest;
+import com.edu.core.BaseTest;
 
 public class UploadManagement extends BaseTest {
 	public void initDemo() {
@@ -18,8 +18,9 @@ public class UploadManagement extends BaseTest {
 	@Test(description="查看图片")
 	public void viewPhoto() {
 		initDemo();
-		webtest.click("link=查看");		
-		assertTrue(webtest.isTextPresent("保存文件"));
+		webtest.click("link=查看");	
+		//判断这个图片元素存在
+		assertTrue(webtest.isElementPresent("id=imgview_spanmask"));
 		
 	}
 
