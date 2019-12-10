@@ -6,7 +6,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 
-import com.edu.yanjie.core.BaseTest;
+import com.edu.core.BaseTest;
 
 public class SendMessage extends BaseTest {
 	public void initDemo() {

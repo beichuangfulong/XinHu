@@ -6,11 +6,10 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
-import com.edu.yanjie.core.ApiListener;
-import com.edu.yanjie.core.BaseTest;
+import com.edu.core.ApiListener;
+import com.edu.core.BaseTest;
+import com.edu.dataprovider.NSDataProvider;
 import com.webtest.dataprovider.ExcelDataProvider;
-
-import dataprovider.NSDataProvider;
 @Listeners(ApiListener.class)
 public class AddCompany extends BaseTest {
 	

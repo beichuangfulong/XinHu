@@ -7,7 +7,7 @@ import javax.naming.directory.InitialDirContext;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 
-import com.edu.yanjie.core.BaseTest;
+import com.edu.core.BaseTest;
 
 public class SearchCompany extends BaseTest {
 	

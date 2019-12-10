@@ -3,9 +3,10 @@ package com.edu.yanjie.system.subscriptionManagement.subscriptionManagement;
 import static org.testng.Assert.assertFalse;
 import static org.testng.Assert.assertTrue;
 
+import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 
-import com.edu.yanjie.core.BaseTest;
+import com.edu.core.BaseTest;
 
 public class SubscriptionOperate extends BaseTest {
 	public void initDemo() {
@@ -23,8 +24,9 @@ public class SubscriptionOperate extends BaseTest {
 		webtest.click("link=操作");
 		//选择添加提醒设置
 		webtest.click("xpath=//li[@temp='3']");
-		//判断保存按钮是否为置灰状态
-		assertFalse(webtest.isEnabled("xpath=//input[@value='保存(S)']"));	
+		webtest.enterFrame("openinputiframe");
+		//判断是否提示必填项不能为空
+		assertTrue(webtest.isTextPresent("提醒频率不能为空"));
 		
 	}
 	@Test(description="设置提醒设置提醒频率为每月 02 02:05:00")
@@ -34,9 +36,15 @@ public class SubscriptionOperate extends BaseTest {
 		webtest.click("link=操作");
 		//选择添加提醒设置
 		webtest.click("xpath=//li[@temp='3']");
-		webtest.type("name=ratecont", "每月 02 02:05:00");
+		webtest.enterFrame("openinputiframe");
+		WebElement element=webtest.FindElement("name=rave_pinlvs2");
+		webtest.RemoveAttribute(element);
+		webtest.type("name=rave_pinlvs2", "2019-12-02 15:32:00");
+		webtest.click("name=ratecont");
 		//点击保存按钮
 		webtest.click("xpath=//input[@value='保存(S)']");
+		webtest.leaveFrame();
+		assertTrue(webtest.isTextPresent("2019-12-02 15:32:00"));
 	}
 
 }

@@ -6,7 +6,7 @@ import static org.testng.Assert.assertTrue;
 import org.apache.xmlbeans.impl.xb.xsdschema.impl.PublicImpl;
 import org.testng.annotations.Test;
 
-import com.edu.yanjie.core.BaseTest;
+import com.edu.core.BaseTest;
 
 public class AddGroup extends BaseTest {
 	public void InitDemo() {
