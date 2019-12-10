@@ -1,51 +1,35 @@
 package com.edu.test;
 
+import static org.testng.Assert.assertTrue;
+
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
-import com.edu.core.HttpDriver;
-import com.edu.utils.Checker;
+import com.edu.core.ApiListener;
+import com.edu.core.BaseTest;
 
-import net.sf.json.JSONObject;
-
-public class LoginTest {
-
-	String login_url="/common/fgadmin/login";
-	Checker check = null;
+@Listeners(ApiListener.class)
+public class LoginTest extends BaseTest {
+	@Test	
+	public void loginSuccess() {
+		webtest.open("http://localhost:8016/?m=login");
+		//文本框输入
+		webtest.type("name=adminuser", "admin");
+		webtest.type("xpath=//input[@type='password']", "123456");
+		webtest.click("name=button");
+		assertTrue(webtest.isTextPresent("管理员"));
+		
+	}
 	@Test
-	public void login(Object phoneArea,Object phoneNumber,Object password) {
-		JSONObject user=new JSONObject();
-		user.element("phoneArea", phoneArea);
-		user.element("phoneNumber",phoneNumber);
-		user.element("password", password);
-		String result=HttpDriver.doPost(login_url, user);
-		System.out.println(result);
-		check = new Checker(result);
-//		try {
-//			check.verifyTextPresent("massage");
-//			check.verify(result, "success");
-//			check.verifyXpath("massage", "success");
-//		} catch (Exception e) {
-//			// TODO Auto-generated catch block
-//			e.printStackTrace();
-//		}
-	}	
-		@Test
-		public void testLoginSuccess() throws Exception {
-			login("86", "20000000000", "netease123");
-			check.verifyTextPresent("massage");
-			check.verifyXpath("code", "200");
-		}
+	public void loginFail() {
+		webtest.open("http://localhost:8016/?m=login");
+		//文本框输入
+		webtest.type("name=adminuser", "admin");
+		webtest.type("xpath=//input[@type='password']", "abcdef");
+		webtest.click("name=button");
+		assertTrue(webtest.isTextPresent("管理员"));
 		
-		@Test
-		public void testLoginForWrongPhone() throws Exception {
-			login(82, "20000000000", "netease123");
-			check.verifyXpath("code", "400");
-		}
-		
-		@Test
-		public void testLoginForWrongNumber() throws Exception {
-			login("86", "200000000000", "netease12113");
-			check.verifyXpath("code", "400");
-			check.verifyXpath("massage", "用户名或者密码错误");
-		}
+	}
+	
+
 }

@@ -1,25 +1,10 @@
 package com.edu.core;
 
-import java.io.BufferedInputStream;
-import java.io.File;
-import java.io.FileInputStream;
 import java.io.IOException;
-import java.io.InputStream;
-import java.text.SimpleDateFormat;
-import java.util.Date;
-import java.util.Properties;
-
-
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeSuite;
-
-
 import com.webtest.utils.Log;
 import com.webtest.utils.ReadProperties;
 
@@ -27,16 +12,11 @@ import com.webtest.utils.ReadProperties;
  * author:lihuanzhen
  * ³õÊ¼»¯ä¯ÀÀÆ÷
  */
-
-
 public class BaseTest {
 
 	public  WebDriverEngine webtest;
 	private WebDriver driver;
 	public String driverType;
-
-	
-	
 
 	private WebDriver newWebDriver(String driverType) throws IOException {
 		WebDriver driver = null;
@@ -56,22 +36,16 @@ public class BaseTest {
 			
 		}else{
 			return null;
-		}
-
-		
+		}		
 		return driver;
-
 	
 	}
-
 
 	/**
 	 * 
 	 *³õÊ¼»¯ä¯ÀÀÆ÷
 	 * 
 	 */
-
-
 	@BeforeClass
 	public void doBeforeClass() throws Exception {
 
@@ -80,12 +54,8 @@ public class BaseTest {
 		driver.manage().window().maximize();
 		Log.info(driverType);
 		webtest = new WebDriverEngine(driver);
-	
-	
-	
+		
 	}
-
-
 //	@AfterSuite
 //	public void doAfterMethod() {
 //		if(this.driver != null){
@@ -94,15 +64,8 @@ public class BaseTest {
 //		Log.info("Quitted Browser");
 //	}
 //	
-
-	
-
-	
 	public WebDriver getDriver() {
         return driver;
-    }
-
-
-	
+    }	
 
 }

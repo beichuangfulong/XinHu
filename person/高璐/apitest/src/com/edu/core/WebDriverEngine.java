@@ -1,30 +1,15 @@
 package com.edu.core;
 
-import java.io.File;
-import java.io.IOException;
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
-
 import org.openqa.selenium.Alert;
-import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
-import org.testng.Assert;
-import org.testng.annotations.Test;
-
 import com.webtest.utils.Log;
-import com.webtest.utils.ReadProperties;
 /**
  * author:lihuanzhen
  
@@ -149,6 +134,13 @@ public class WebDriverEngine {
 			this.pause(3000);
 		}
 	}
+	
+	public WebElement FindElement(String locator) {
+
+		WebElement element = finder.findElement(locator);
+		return element;
+		
+	}
 
 	public void clickLonger(String locator) {
 
@@ -172,6 +164,14 @@ public class WebDriverEngine {
 		if (element != null) {
 			System.out.println(element.isDisplayed());
 		}
+	}
+	//≈–∂œ‘™Àÿ «∑Òª“ªØ◊¥Ã¨
+	public Boolean isEnabled(String locator) {
+
+		WebElement element = finder.findElement(locator);
+		
+			return element.isEnabled();
+		
 	}
 
 	public String getText(String locator) {
@@ -262,7 +262,7 @@ public class WebDriverEngine {
 	public void mouseoverElement(String locator) throws InterruptedException {
 		action.moveToElement(finder.findElement(locator)).perform();
 	}
-	//ÂàáÊç¢Á™óÂè£
+	
 	public void switchWidow(int i){
 	    List<String> windows = new ArrayList<String>();
 	    for (String handle : driver.getWindowHandles()) {
@@ -271,11 +271,11 @@ public class WebDriverEngine {
 	    }
 	    driver.switchTo().window(windows.get(i));
 	}
-	//Âè≥ÈîÆ
+	
 	public void rightClickMouse(String locator) throws InterruptedException {
 		action.contextClick(finder.findElement(locator)).perform();
 		}
-	//TabÈî?
+	
 	public void tapClick(){
 	
 		action.sendKeys(Keys.TAB).perform();;
@@ -290,7 +290,7 @@ public class WebDriverEngine {
 		List<String> windows = new ArrayList<String>();
 		for (String handle : driver.getWindowHandles())
 		{
-			//System.out.println(handle);  
+			//System.out.println(handle); 
 			windows.add(handle);
 		}
 		driver.switchTo().window(windows.get(i));
