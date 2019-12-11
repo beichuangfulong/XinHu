@@ -5,11 +5,13 @@ import static org.testng.Assert.assertTrue;
 import java.io.IOException;
 
 import org.testng.annotations.DataProvider;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
+import com.webtest.core.ApiListener;
 import com.webtest.core.BaseTest;
 import com.webtest.dataprovider.ExcelDataProvider;
-
+@Listeners(ApiListener.class)
 public class ReimSearch extends BaseTest{
 	@DataProvider(name="data3")
 	public static Object[][] data() throws IOException {

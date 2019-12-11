@@ -18,6 +18,7 @@ import org.testng.ITestNGMethod;
 import org.testng.ITestResult;
 import org.testng.TestListenerAdapter;
 
+import com.webtest.core.MailUtil;
 import com.webtest.utils.ReadProperties;
 
 import freemarker.template.Configuration;
@@ -25,7 +26,7 @@ import freemarker.template.Template;
 
 public class ApiListener extends TestListenerAdapter{
 
-
+	String resultend = null;
    
 	@Override
 	public void onFinish(ITestContext testContext) {
@@ -89,6 +90,7 @@ public class ApiListener extends TestListenerAdapter{
 		            out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(docFile)));
 		            // step6 输出文件
 		            template.process(context, out);
+		            resultend = docFile.toString();
 		        } catch (Exception e) {
 		            e.printStackTrace();
 		        } finally {
@@ -101,7 +103,7 @@ public class ApiListener extends TestListenerAdapter{
 		            }
 		       }
 		        try {
-					MailUtils.sendMail1();
+		        	MailUtil.sendEmail("测试报告",resultend,2);
 				} catch (IOException e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
