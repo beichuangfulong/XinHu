@@ -1,0 +1,18 @@
+<suite name ="TestNGSuite">
+	<test name="test2">
+		<classes>
+		
+			<class name="com.edu.lijiaqi.reim.ReimSearch"/>
+			<class name="com.edu.lijiaqi.reim.ReimChat"/>
+			<class name="com.edu.lijiaqi.reim.ReimSet"/>
+			<class name="com.edu.lijiaqi.reim.Process"/>
+			<class name="com.edu.lijiaqi.reim.ProcessData"/>
+			<class name="com.edu.lijiaqi.reim.ProcessList"/>
+			<class name="com.edu.lijiaqi.reim.ProcessTerm"/>
+			
+		</classes>
+		<listeners>
+			<listener class-name="com.edu.core.ApiListener"/>
+		</listeners>
+	</test>
+</suite>
