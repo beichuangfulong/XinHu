@@ -23,7 +23,7 @@ public class Administration_2_2 extends BaseTest {
 	}
 	@DataProvider(name="zichan")
 	public Object[][] getExcelDada() throws IOException{
-		return new ExcelDataProvider().getTestDataByExcel("F:\\data\\time.xlsx","Sheet5");
+		return new ExcelDataProvider().getTestDataByExcel("D:\\git\\XinHu\\XinHu\\data\\time.xlsx","Sheet5");
 	}
 	
 	@Test(description="新增固定资产",dataProvider="zichan")
