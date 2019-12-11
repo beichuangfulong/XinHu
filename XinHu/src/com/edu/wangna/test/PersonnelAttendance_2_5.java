@@ -48,7 +48,7 @@ public class PersonnelAttendance_2_5 extends BaseTest {
 	
 	@DataProvider(name="check")
 	public Object[][] getExcelDada() throws IOException{
-		return new ExcelDataProvider().getTestDataByExcel("F:\\data\\user.xlsx","Sheet4");
+		return new ExcelDataProvider().getTestDataByExcel("D:\\git\\XinHu\\XinHu\\data\\user.xlsx","Sheet4");
 	}
 	
 	@Test(description="根据不同的关键字查看员工奖惩",dataProvider="check")

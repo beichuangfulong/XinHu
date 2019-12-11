@@ -24,7 +24,7 @@ public class PersonnelAttendance_3 extends BaseTest {
 	
 	@DataProvider(name="time")
 	public Object[][] getExcelDada() throws IOException{
-		return new ExcelDataProvider().getTestDataByExcel("F:\\data\\time.xlsx","Sheet1");
+		return new ExcelDataProvider().getTestDataByExcel("D:\\git\\XinHu\\XinHu\\data\\time.xlsx","Sheet1");
 	}
 	
 	@Test(description="按照不同的关键字查看工作日报",dataProvider="time")

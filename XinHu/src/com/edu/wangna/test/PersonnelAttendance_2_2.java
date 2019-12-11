@@ -25,7 +25,7 @@ public class PersonnelAttendance_2_2 extends BaseTest {
 	
 	@DataProvider(name="lizhi")
 	public Object[][] getExcelDada() throws IOException{
-		return new ExcelDataProvider().getTestDataByExcel("F:\\data\\user.xlsx","Sheet3");
+		return new ExcelDataProvider().getTestDataByExcel("D:\\git\\XinHu\\XinHu\\data\\user.xlsx","Sheet3");
 	}
 	
 	@Test(description="不同类型的原因催办离职申请",dataProvider="lizhi")

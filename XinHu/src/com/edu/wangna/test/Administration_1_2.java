@@ -25,7 +25,7 @@ public class Administration_1_2 extends BaseTest {
 	
 	@DataProvider(name="wupin")
 	public Object[][] getExcelDada() throws IOException{
-		return new ExcelDataProvider().getTestDataByExcel("F:\\data\\time.xlsx","Sheet4");
+		return new ExcelDataProvider().getTestDataByExcel("D:\\git\\XinHu\\XinHu\\data\\time.xlsx","Sheet4");
 	}
 	
 	@Test(description="根据不同的关键字查看物品出入库情况",dataProvider="wupin")
