@@ -30,7 +30,7 @@ import com.webtest.utils.ReadProperties;
 
 
 public class BaseTest {
-
+	
 	public  WebDriverEngine webtest;
 	private WebDriver driver;
 	public String driverType;
@@ -81,7 +81,6 @@ public class BaseTest {
 		Log.info(driverType);
 		webtest = new WebDriverEngine(driver);	
 		 //´ò¿ªÍøÒ³
-		webtest.open("http://localhost:8888/xinhu_utf8_v1.5.9");
 		webtest.open(ReadProperties.getPropertyValue("baseURL"));
 		//µÇÂ¼
 		webtest.type("name=adminuser", "admin");

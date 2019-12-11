@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="94428" started-at="2019-12-11T07:33:42Z" finished-at="2019-12-11T07:35:16Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="94428" started-at="2019-12-11T07:33:42Z" finished-at="2019-12-11T07:35:16Z">
+      <class name="com.edu.lijiaqi.reim.ReimChat">
+        <test-method status="PASS" signature="doBeforeClass()[pri:0, instance:com.edu.lijiaqi.reim.ReimChat@77caeb3e]" name="doBeforeClass" is-config="true" duration-ms="19227" started-at="2019-12-11T07:33:42Z" finished-at="2019-12-11T07:34:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="PASS" signature="chatDemo1(java.lang.String)[pri:0, instance:com.edu.lijiaqi.reim.ReimChat@77caeb3e]" name="chatDemo1" duration-ms="22436" started-at="2019-12-11T07:34:02Z" description="发送信息" data-provider="data2" finished-at="2019-12-11T07:34:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[貂蝉]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- chatDemo1 -->
+        <test-method status="PASS" signature="chatDemo1(java.lang.String)[pri:0, instance:com.edu.lijiaqi.reim.ReimChat@77caeb3e]" name="chatDemo1" duration-ms="14991" started-at="2019-12-11T07:34:24Z" description="发送信息" data-provider="data2" finished-at="2019-12-11T07:34:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[貂]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- chatDemo1 -->
+        <test-method status="PASS" signature="chatDemo1(java.lang.String)[pri:0, instance:com.edu.lijiaqi.reim.ReimChat@77caeb3e]" name="chatDemo1" duration-ms="14958" started-at="2019-12-11T07:34:39Z" description="发送信息" data-provider="data2" finished-at="2019-12-11T07:34:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[考勤打卡]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- chatDemo1 -->
+        <test-method status="PASS" signature="chatDemo1(java.lang.String)[pri:0, instance:com.edu.lijiaqi.reim.ReimChat@77caeb3e]" name="chatDemo1" duration-ms="14979" started-at="2019-12-11T07:34:54Z" description="发送信息" data-provider="data2" finished-at="2019-12-11T07:35:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[打卡]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- chatDemo1 -->
+        <test-method status="PASS" signature="chatDemo2()[pri:0, instance:com.edu.lijiaqi.reim.ReimChat@77caeb3e]" name="chatDemo2" duration-ms="3119" started-at="2019-12-11T07:35:09Z" description="会话框关闭" finished-at="2019-12-11T07:35:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- chatDemo2 -->
+        <test-method status="PASS" signature="doAfterClass()[pri:0, instance:com.edu.lijiaqi.reim.ReimChat@77caeb3e]" name="doAfterClass" is-config="true" duration-ms="3978" started-at="2019-12-11T07:35:12Z" finished-at="2019-12-11T07:35:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterClass -->
+      </class> <!-- com.edu.lijiaqi.reim.ReimChat -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
