@@ -1,4 +1,4 @@
-package com.edu.system;
+package com.edu.gaolu.system;
 
 import org.testng.annotations.Test;
 

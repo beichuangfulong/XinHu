@@ -1,4 +1,4 @@
-package com.edu.system;
+package com.edu.gaolu.system;
 
 import org.testng.annotations.Test;
 
@@ -25,9 +25,9 @@ public class VectionApply extends BaseTest{
 		//输入地址
 		webtest.type("xpath=//*[@id=\"div_address\"]/input", "南二环东路20号");
 		//选择外出时间
-		webtest.runJs("arguments[0].removeAttribute('readonly')", "xpath=//*[@id=\"div_happendt\"]/input");
+		webtest.runJs2("arguments[0].removeAttribute('readonly')", "xpath=//*[@id=\"div_happendt\"]/input");
 		//选择预计回岗
-		webtest.runJs("arguments[0].removeAttribute('readonly')", "xpath=//*[@id=\"div_intime\"]/input");
+		webtest.runJs2("arguments[0].removeAttribute('readonly')", "xpath=//*[@id=\"div_intime\"]/input");
 		//输入外出理由
 		webtest.type("xpath=//*[@id=\"div_reason\"]/input","好好工作");
 		//点击保存
@@ -47,9 +47,9 @@ public class VectionApply extends BaseTest{
 		//输入地址
 		webtest.type("xpath=//*[@id=\"div_address\"]/input", "南二环东路20号");
 		//选择外出时间
-		webtest.runJs("arguments[0].removeAttribute('readonly')", "xpath=//*[@id=\"div_happendt\"]/input");
+		webtest.runJs2("arguments[0].removeAttribute('readonly')", "xpath=//*[@id=\"div_happendt\"]/input");
 		//选择预计回岗
-		webtest.runJs("arguments[0].removeAttribute('readonly')", "xpath=//*[@id=\"div_intime\"]/input");
+		webtest.runJs2("arguments[0].removeAttribute('readonly')", "xpath=//*[@id=\"div_intime\"]/input");
 		//输入外出理由
 		webtest.type("xpath=//*[@id=\"div_reason\"]/input","好好工作");
 		//点击保存
@@ -69,9 +69,9 @@ public class VectionApply extends BaseTest{
 		//输入地址
 		webtest.type("xpath=//*[@id=\"div_address\"]/input", "南二环东路20号");
 		//选择外出时间
-		webtest.runJs("arguments[0].removeAttribute('readonly')", "xpath=//*[@id=\"div_happendt\"]/input");
+		webtest.runJs2("arguments[0].removeAttribute('readonly')", "xpath=//*[@id=\"div_happendt\"]/input");
 		//选择预计回岗
-		webtest.runJs("arguments[0].removeAttribute('readonly')", "xpath=//*[@id=\"div_intime\"]/input");
+		webtest.runJs2("arguments[0].removeAttribute('readonly')", "xpath=//*[@id=\"div_intime\"]/input");
 		//点击保存
 		webtest.click("id=AltS");
 		//离开frame页面

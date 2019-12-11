@@ -1,4 +1,4 @@
-package com.edu.test;
+package com.edu.wangna.test;
 
 import static org.testng.Assert.assertTrue;
 
@@ -44,9 +44,9 @@ public class PersonnelAttendance_1_2 extends BaseTest {
 		
 		//webtest.runJs("document.getElementsByTagName(\"H1\")[0].removeAttribute(\"style\");");
 		//选择时间 配置readonly属性
-		webtest.runJs("arguments[0].removeAttribute('readonly')", "xpath=//span[@id='div_startdt']/input");
+		webtest.runJs2("arguments[0].removeAttribute('readonly')", "xpath=//span[@id='div_startdt']/input");
 		webtest.type("xpath=//span[@id='div_startdt']/input", "2019-10-1");
-		webtest.runJs("arguments[0].removeAttribute('readonly')","xpath=//span[@id='div_enddt']/input");
+		webtest.runJs2("arguments[0].removeAttribute('readonly')","xpath=//span[@id='div_enddt']/input");
 		webtest.type("xpath=//span[@id='div_enddt']/input", "2019-12-13");
 
 		webtest.click("xpath=//input[@id=\"AltS\"]");
@@ -79,9 +79,9 @@ public class PersonnelAttendance_1_2 extends BaseTest {
 		
 		//webtest.runJs("document.getElementsByTagName(\"H1\")[0].removeAttribute(\"style\");");
 		//选择时间 配置readonly属性
-		webtest.runJs("arguments[0].removeAttribute('readonly')", "xpath=//span[@id='div_startdt']/input");
+		webtest.runJs2("arguments[0].removeAttribute('readonly')", "xpath=//span[@id='div_startdt']/input");
 		webtest.type("xpath=//span[@id='div_startdt']/input", "2019-10-1");
-		webtest.runJs("arguments[0].removeAttribute('readonly')","xpath=//span[@id='div_enddt']/input");
+		webtest.runJs2("arguments[0].removeAttribute('readonly')","xpath=//span[@id='div_enddt']/input");
 		webtest.type("xpath=//span[@id='div_enddt']/input", "2019-12-13");
 
 		webtest.click("xpath=//input[@id=\"AltS\"]");
@@ -113,9 +113,9 @@ public class PersonnelAttendance_1_2 extends BaseTest {
 		
 		//webtest.runJs("document.getElementsByTagName(\"H1\")[0].removeAttribute(\"style\");");
 		//选择时间 配置readonly属性
-		webtest.runJs("arguments[0].removeAttribute('readonly')", "xpath=//span[@id='div_startdt']/input");
+		webtest.runJs2("arguments[0].removeAttribute('readonly')", "xpath=//span[@id='div_startdt']/input");
 		webtest.type("xpath=//span[@id='div_startdt']/input", "2019-10-1");
-		webtest.runJs("arguments[0].removeAttribute('readonly')","xpath=//span[@id='div_enddt']/input");
+		webtest.runJs2("arguments[0].removeAttribute('readonly')","xpath=//span[@id='div_enddt']/input");
 		webtest.type("xpath=//span[@id='div_enddt']/input", "2019-12-13");
 
 		webtest.click("xpath=//input[@id=\"AltS\"]");
@@ -147,9 +147,9 @@ public class PersonnelAttendance_1_2 extends BaseTest {
 		
 		//webtest.runJs("document.getElementsByTagName(\"H1\")[0].removeAttribute(\"style\");");
 		//选择时间 配置readonly属性
-		webtest.runJs("arguments[0].removeAttribute('readonly')", "xpath=//span[@id='div_startdt']/input");
+		webtest.runJs2("arguments[0].removeAttribute('readonly')", "xpath=//span[@id='div_startdt']/input");
 		webtest.type("xpath=//span[@id='div_startdt']/input", "2019-10-1");
-		webtest.runJs("arguments[0].removeAttribute('readonly')","xpath=//span[@id='div_enddt']/input");
+		webtest.runJs2("arguments[0].removeAttribute('readonly')","xpath=//span[@id='div_enddt']/input");
 		webtest.type("xpath=//span[@id='div_enddt']/input", "2019-12-13");
 
 		webtest.click("xpath=//input[@id=\"AltS\"]");
@@ -181,9 +181,9 @@ public class PersonnelAttendance_1_2 extends BaseTest {
 		
 		//webtest.runJs("document.getElementsByTagName(\"H1\")[0].removeAttribute(\"style\");");
 		//选择时间 配置readonly属性
-		webtest.runJs("arguments[0].removeAttribute('readonly')", "xpath=//span[@id='div_startdt']/input");
+		webtest.runJs2("arguments[0].removeAttribute('readonly')", "xpath=//span[@id='div_startdt']/input");
 		webtest.type("xpath=//span[@id='div_startdt']/input", "2019-10-1");
-		webtest.runJs("arguments[0].removeAttribute('readonly')","xpath=//span[@id='div_enddt']/input");
+		webtest.runJs2("arguments[0].removeAttribute('readonly')","xpath=//span[@id='div_enddt']/input");
 		webtest.type("xpath=//span[@id='div_enddt']/input", "2019-12-13");
 
 		webtest.click("xpath=//input[@id=\"AltS\"]");

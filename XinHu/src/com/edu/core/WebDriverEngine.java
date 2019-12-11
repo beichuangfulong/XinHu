@@ -275,6 +275,11 @@ public class WebDriverEngine {
 		JavascriptExecutor j = (JavascriptExecutor) driver;
 		j.executeScript(js);
 	}
+	public void runJs2(String js,String locator) {
+		JavascriptExecutor j = (JavascriptExecutor) driver;
+		j.executeScript(js,finder.findElement(locator));
+	}
+
 	public void ElementDisplay(WebElement element) {
 		JavascriptExecutor j = (JavascriptExecutor) driver;
 	    j.executeScript("arguments[0].setAttribute('style',arguments[1]);",element,"display:block;");		

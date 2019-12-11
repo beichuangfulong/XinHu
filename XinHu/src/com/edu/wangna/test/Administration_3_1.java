@@ -1,4 +1,4 @@
-package com.edu.test;
+package com.edu.wangna.test;
 
 import static org.testng.Assert.assertTrue;
 
@@ -34,7 +34,7 @@ public class Administration_3_1 extends BaseTest {
 		webtest.selectByValue("xpath=//*[@id=\"div_cartype\"]/select", "½Î³µ");
 		webtest.selectByValue("xpath=//*[@id=\"div_carbrand\"]/select", "±¼³Û");
 		webtest.type("xpath=//*[@id=\"div_carmode\"]/input", "1");
-		webtest.runJs("arguments[0].removeAttribute('readonly')", "xpath=//*[@id=\"div_buydt\"]/input");
+		webtest.runJs2("arguments[0].removeAttribute('readonly')", "xpath=//*[@id=\"div_buydt\"]/input");
 		webtest.type("xpath=//*[@id=\"div_buydt\"]/input", "2019-10-1");
 		webtest.type("xpath=//*[@id=\"div_buyprice\"]/input", "1");
 		webtest.selectByValue("xpath=//*[@id=\"div_state\"]/select", "1");

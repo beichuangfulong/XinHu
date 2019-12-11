@@ -14,7 +14,7 @@ public class ProcessList extends BaseTest{
 	@DataProvider(name="data5")
 	public static Object [][] data() throws IOException{
 		ExcelDataProvider dataProvider = new ExcelDataProvider();
-		return dataProvider.getTestDataByExcel("D:\\java\\java\\auto2019\\auto2019\\src\\data\\test.xlsx", "Sheet6");
+		return dataProvider.getTestDataByExcel("D:\\git\\XinHu\\XinHu\\data\\data.xlsx", "Sheet6");
 	}
 	public void InitDemo() {
 		webtest.click("xpath=//span[@pmenuid='7']");

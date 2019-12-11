@@ -1,4 +1,4 @@
-package com.edu.system;
+package com.edu.gaolu.system;
 
 import static org.testng.Assert.assertTrue;
 

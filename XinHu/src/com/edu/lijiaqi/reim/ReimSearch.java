@@ -14,7 +14,7 @@ public class ReimSearch extends BaseTest{
 	@DataProvider(name="data3")
 	public static Object[][] data() throws IOException {
 		ExcelDataProvider dataProvider = new ExcelDataProvider();
-		return dataProvider.getTestDataByExcel("D:\\java\\java\\auto2019\\auto2019\\src\\data\\test.xlsx", "Sheet4");
+		return dataProvider.getTestDataByExcel("D:\\git\\XinHu\\XinHu\\data\\data.xlsx", "Sheet4");
 	}
 	public void InitDemo() {
 		webtest.click("xpath=//span[@title='REIM¼´Ê±Í¨ÐÅ']");

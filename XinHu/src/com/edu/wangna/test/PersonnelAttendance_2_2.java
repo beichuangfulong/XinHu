@@ -1,4 +1,4 @@
-package com.edu.test;
+package com.edu.wangna.test;
 
 import static org.testng.Assert.assertFalse;
 import static org.testng.Assert.assertTrue;

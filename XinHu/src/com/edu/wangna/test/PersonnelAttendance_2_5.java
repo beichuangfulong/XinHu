@@ -1,4 +1,4 @@
-package com.edu.test;
+package com.edu.wangna.test;
 
 import static org.testng.Assert.assertFalse;
 import static org.testng.Assert.assertTrue;
@@ -36,7 +36,7 @@ public class PersonnelAttendance_2_5 extends BaseTest {
 		webtest.click("xpath=//input[starts-with(@name,'changeuserinput_')]");
 		webtest.click("xpath=//input[starts-with(@id,'changeok_')]");
 		webtest.selectByValue("xpath=//*[@id=\"div_result\"]/select", "½±Àø");
-		webtest.runJs("arguments[0].removeAttribute('readonly')", "xpath=//*[@id=\"div_happendt\"]/input");
+		webtest.runJs2("arguments[0].removeAttribute('readonly')", "xpath=//*[@id=\"div_happendt\"]/input");
 		webtest.type("xpath=//*[@id=\"div_happendt\"]/input", "2019-12-25 16:43:38");
 		webtest.type("xpath=//*[@id=\"div_hapaddress\"]/input", "1");
 		webtest.typeAndClear("xpath=//*[@id=\"div_money\"]/input", "2");

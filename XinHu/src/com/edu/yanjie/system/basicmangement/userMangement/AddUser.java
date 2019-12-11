@@ -2,10 +2,14 @@ package com.edu.yanjie.system.basicmangement.userMangement;
 
 import static org.testng.Assert.assertTrue;
 
+import java.io.IOException;
+
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import com.edu.core.BaseTest;
 import com.edu.dataprovider.NSDataProvider;
+import com.webtest.dataprovider.ExcelDataProvider;
 
 public class AddUser extends BaseTest {
 	public void InitDemo() {
@@ -16,7 +20,12 @@ public class AddUser extends BaseTest {
 		//点击用户管理
 		webtest.click("id=menu_list_user");
 	}
-	@Test(dataProvider="excel",dataProviderClass=NSDataProvider.class,description="数据驱动添加新的用户")
+	@DataProvider(name="user")
+	public static Object [][] data() throws IOException{
+		ExcelDataProvider dataProvider = new ExcelDataProvider();
+		return dataProvider.getTestDataByExcel("D:\\git\\XinHu\\XinHu\\data\\data.xlsx", "Sheet1");
+	}
+	@Test(dataProvider="user",description="数据驱动添加新的用户")
 	public void addUser1(String name,String user,String ranking,String mobile,String condition) {
 		InitDemo();
 		webtest.click("xpath=//button[@class='btn btn-primary']");
