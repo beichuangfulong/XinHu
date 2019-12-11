@@ -14,7 +14,7 @@ public class AddTask extends BaseTest{
 		//点击我的任务
 		webtest.click("id=menu_list_num68");
 	}
-	@Test(description="添加名称111的任务")
+	@Test(description="添加名称1111的任务")
 	public void AddProject1() throws InterruptedException {		
 		InitDemo();		
 		//点击新增
@@ -28,13 +28,13 @@ public class AddTask extends BaseTest{
 		webtest.click("xpath=//select[@name='grade']");
 		webtest.click("xpath=//option[@value='低']");
 		//输入标题为111
-		webtest.type("name=title","111");
+		webtest.type("name=title","1111");
 		//点击保存
 		//点击保存
 		webtest.click("id=AltS");
 		//离开iframe页面
 		webtest.leaveFrame();
-		assertTrue(webtest.isTextPresent("111"));	
+		assertTrue(webtest.isTextPresent("1111"));	
 	}
 	@Test(description="不添加标题")
 	public void AddProject2() throws InterruptedException {	
@@ -59,7 +59,7 @@ public class AddTask extends BaseTest{
 		//点击进入iframe
 		webtest.enterFrame("openinputiframe");
 		//输入标题为111
-		webtest.type("name=title","111");		
+		webtest.type("name=title","1111");		
 		//点击保存
 		webtest.click("id=AltS");
 		assertTrue(webtest.isTextPresent("类型不能为空"));
@@ -73,7 +73,7 @@ public class AddTask extends BaseTest{
 		//点击进入iframe
 		webtest.enterFrame("openinputiframe");
 		//输入标题为111
-		webtest.type("name=title","111");
+		webtest.type("name=title","1111");
 		//选择类型
 		webtest.click("xpath=//select[@name='type']");
 		webtest.click("xpath=//option[@value='bug']");
