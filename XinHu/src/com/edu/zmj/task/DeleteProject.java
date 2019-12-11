@@ -4,7 +4,6 @@ import static org.testng.Assert.assertFalse;
 import org.testng.annotations.Test;
 
 import com.edu.core.BaseTest;
-import com.edu.dataprovider.NSDataProvider;
 public class DeleteProject extends BaseTest{
 	public void InitDemo() {
 		//进入任务模块
